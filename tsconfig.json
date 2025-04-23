@@ -1,6 +1,13 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@translations/*":["frontend/Translation/*"],
+      "@authscreens/*":["frontend/Auth/*"],
+
+      "@ui/*":["frontend/UI/*"],
+    }
   }
 }
